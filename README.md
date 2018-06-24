@@ -5,7 +5,7 @@
 1. Put React and unidirectional data to use
 2. Use AJAX in a small React library
 
-## Overview
+## Overviewd
 
 In this lesson we're going to build an autocomplete component using Wikipedia's
 Search API.
