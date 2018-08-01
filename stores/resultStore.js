@@ -2,9 +2,14 @@
 
 import Store from './Store';
 
-class ResultStore {
+class ResultStore extends Store {
+  isOutdated(updated){
+    return updated < this.getState().updated;
+  }
 }
 
-const resultStore = new ResultStore();
+const resultStore = new ResultStore({
+  results: ['']
+});
 
 export default resultStore;
