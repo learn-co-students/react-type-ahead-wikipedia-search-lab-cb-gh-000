@@ -1,5 +1,7 @@
 'use strict';
 
+import { removeListener } from "cluster";
+
 export default class Store {
   constructor(initialState) {
     this.state = initialState;
@@ -7,7 +9,12 @@ export default class Store {
   }
 
   addListener(listener) {
-    // TODO
+    this.listeners.push(listener);
+    const removeListener = () => {
+      this.listeners = this.listeners
+        .filter(l => listener !== l);
+    }
+    return removeListener; 
   }
 
   setState(state) {
