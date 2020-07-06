@@ -10,7 +10,7 @@
 In this lesson we're going to build an autocomplete component using Wikipedia's
 Search API.
 
-This is what it's going to look like:
+This is what it's going to look like: j
 
 ![Screenshot](https://s3.amazonaws.com/learn-verified/react-type-ahead-wikipedia-search-lab-screenshot.png)
 
